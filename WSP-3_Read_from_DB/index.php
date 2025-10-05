@@ -10,7 +10,7 @@
     <title>Form new User</title>
 </head>
 <body>
-    <form action="save.php" method="post">
+    <form action="login.php" method="post">
 
         <label for="name">Username:</label>
         <input type="text" name="username" id="name">
