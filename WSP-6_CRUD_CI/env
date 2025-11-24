@@ -1,8 +1,3 @@
-SERVER=localhost
-USERNAME=root
-PASSWORD=''
-DBNAME=workshop_3
-
 #--------------------------------------------------------------------
 # Example Environment Configuration file
 #

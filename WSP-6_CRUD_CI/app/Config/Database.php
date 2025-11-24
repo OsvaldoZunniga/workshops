@@ -14,7 +14,9 @@ class Database extends Config
      */
     public string $filesPath = APPPATH . 'Database' . DIRECTORY_SEPARATOR;
 
-    
+    /**
+     * Lets you choose which connection group to use if no other is specified.
+     */
     public string $defaultGroup = 'default';
 
     /**
@@ -22,8 +24,6 @@ class Database extends Config
      *
      * @var array<string, mixed>
      */
-    // usar .env para la configuracion de la base de datos
-    
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'localhost',

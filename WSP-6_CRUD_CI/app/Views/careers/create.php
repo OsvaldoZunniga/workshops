@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create Career</title>
 </head>
 <body>
-    <form action="/Students/store" method="POST">
-        <label for="name">Nombre carrera:</label>
-        <input type="text" name="name" id="name">
-        <label for="last_name">Codigo:</label>
-        <input type="text" name="last_name" id="last_name">
-        
-        <button>Submit</button>
-    </form>
+<h1>Add New Career</h1>
+<form action="/careers/store" method="post">
+    <label>Name:</label>
+    <input type="text" name="nombre" required><br><br>
+    
+    <label>Code:</label>
+    <input type="text" name="codigo" required><br><br>
+
+    
+    <button type="submit">Save</button>
+    <a href="/careers">Cancel</a>
+</form>
 </body>
 </html>
+
