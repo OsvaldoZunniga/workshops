@@ -61,9 +61,8 @@ class Career extends BaseController
     public function update($id)
     {
         $data = [
-            'name' => $this->request->getPost('name'),
-            'description' => $this->request->getPost('description'),
-            'duration_years' => $this->request->getPost('duration_years')
+            'nombre' => $this->request->getPost('nombre'),
+            'codigo' => $this->request->getPost('codigo')  
         ];
 
         if ($this->careerModel->update($id, $data)) {
@@ -80,7 +79,7 @@ class Career extends BaseController
     {
         // Verificar si hay estudiantes asociados
         $studentModel = new \App\Models\StudentModel();
-        $studentsCount = $studentModel->where('career_id', $id)->countAllResults();
+        $studentsCount = $studentModel->where('fk_career', $id)->countAllResults();
 
         if ($studentsCount > 0) {
             session()->setFlashdata('error', 'No se puede eliminar la carrera porque tiene estudiantes asociados');

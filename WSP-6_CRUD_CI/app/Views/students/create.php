@@ -5,7 +5,7 @@
 </head>
 <body>
 <h1>Add New Student</h1>
-<form action="students/store" method="post">
+<form action="/students/store" method="post">
     <label>Name:</label>
     <input type="text" name="nombre" required><br><br>
     

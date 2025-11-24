@@ -37,9 +37,8 @@ class Student extends BaseController
             'nombre' => $this->request->getPost('nombre'),
             'apellido' => $this->request->getPost('apellido'),
             'edad' => $this->request->getPost('edad'),
-            'fk_career' => $this->request->getPost('fk_career_id')
+            'fk_career' => $this->request->getPost('fk_career')
         ];
-
         if ($this->studentModel->insert($data)) {
             session()->setFlashdata('success', 'Estudiante creado exitosamente');
             return redirect()->to('/students');
@@ -67,10 +66,10 @@ class Student extends BaseController
     public function update($id)
     {
         $data = [
-            'first_name' => $this->request->getPost('first_name'),
-            'last_name' => $this->request->getPost('last_name'),
-            'email' => $this->request->getPost('email'),
-            'career_id' => $this->request->getPost('career_id')
+            'nombre' => $this->request->getPost('nombre'),
+            'apellido' => $this->request->getPost('apellido'),
+            'edad' => $this->request->getPost('edad'),
+            'fk_career' => $this->request->getPost('fk_career')
         ];
 
         if ($this->studentModel->update($id, $data)) {

@@ -8,7 +8,7 @@
     <a href="/students/create">+ Add New Student</a> | <a href="/careers">View Careers</a>
     <table border="1">
         <tr>
-            <th>Nomobre</th>
+            <th>Nombre</th>
             <th>Apellido</th>
             <th>Edad</th>
             <th>Career</th>

@@ -10,7 +10,7 @@ class StudentModel extends Model
     protected $primaryKey = 'id';
 
     protected $allowedFields = ['nombre', 'apellido', 'edad', 'fk_career'];
-    protected $useTimestamps = true;
+    protected $useTimestamps = false;
     
     // Método para obtener estudiantes con información de carrera
     public function getStudentsWithCareers()
